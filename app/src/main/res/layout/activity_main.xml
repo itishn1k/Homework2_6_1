@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/background_door"
+        android:scaleX="1.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_enter_top_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_enter_top"
+        android:layout_marginBottom="@dimen/margin_bottom_enter_top"
+        android:text="@string/enter_russian"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_enter_top"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_welcome_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcome_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_welcome_center"
+        android:text="@string/welcome_russian"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_welcome_center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_enter_or_register_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter_top_center" />
+
+    <TextView
+        android:id="@+id/tv_welcome_center_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_russian"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_welcome2"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_enter_or_register_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/enter_or_register_russian"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_enter_or_register"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_enter_email_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_top_et_enter_email_center"
+        android:layout_marginBottom="@dimen/margin_bottom_et_enter_email_center"
+        android:background="@drawable/et_radius"
+        android:hint="@string/enter_email_russian"
+        android:inputType="text"
+        android:paddingVertical="@dimen/padding_vertical_et_login_password"
+        android:paddingStart="@dimen/et_padding_start"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@id/et_enter_password_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter_or_register_center" />
+
+    <EditText
+        android:id="@+id/et_enter_password_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:background="@drawable/et_radius"
+        android:hint="@string/enter_password_russian"
+        android:inputType="textPassword"
+        android:paddingVertical="@dimen/padding_vertical_et_login_password"
+        android:paddingStart="@dimen/et_padding_start"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@id/btn_enter_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_enter_email_center" />
+
+    <Button
+        android:id="@+id/btn_enter_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_top_btn_enter"
+        android:backgroundTint="@color/gray"
+        android:enabled="false"
+        android:paddingVertical="@dimen/padding_vertical_btn_enter"
+        android:text="@string/enter_btn_russian"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_btn_enter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_enter_password_center" />
+
+    <TextView
+        android:id="@+id/tv_forget_password_bottom_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_forget_click"
+        android:text="@string/forget_password_russian"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_forget_click"
+        app:layout_constraintEnd_toStartOf="@id/tv_click_here_bottom_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enter_bottom" />
+
+    <TextView
+        android:id="@+id/tv_click_here_bottom_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_forget_click"
+        android:text="@string/click_here_russian"
+        android:textColor="@color/orange2"
+        android:textSize="@dimen/margin_top_forget_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_forget_password_bottom_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enter_bottom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="et_padding_start">10sp</dimen>
+    <dimen name="margin_horizontal">24dp</dimen>
+    <dimen name="margin_top_enter_top">120dp</dimen>
+    <dimen name="margin_bottom_enter_top">250dp</dimen>
+    <dimen name="text_size_enter_top">17sp</dimen>
+    <dimen name="margin_bottom_welcome_center">75dp</dimen>
+    <dimen name="text_size_welcome_center">29sp</dimen>
+    <dimen name="text_size_welcome2">35sp</dimen>
+    <dimen name="text_size_enter_or_register">18sp</dimen>
+    <dimen name="margin_top_et_enter_email_center">60dp</dimen>
+    <dimen name="margin_bottom_et_enter_email_center">15dp</dimen>
+    <dimen name="padding_vertical_et_login_password">10dp</dimen>
+    <dimen name="margin_top_btn_enter">11dp</dimen>
+    <dimen name="padding_vertical_btn_enter">11dp</dimen>
+    <dimen name="text_size_btn_enter">18sp</dimen>
+    <dimen name="margin_top_forget_click">18dp</dimen>
+    <dimen name="text_size_forget_click">16sp</dimen>
+</resources>

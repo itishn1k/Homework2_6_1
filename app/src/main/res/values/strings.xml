@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework_2_6</string>
+    <string name="enter_russian">Вход</string>
+    <string name="welcome_russian">Добро пожаловать!</string>
+    <string name="forget_password_russian">Забыл пароль?</string>
+    <string name="click_here_russian">Нажми сюда</string>
+    <string name="enter_or_register_russian">Выполните вход\n или зарегистрируйтесь.</string>
+    <string name="enter_email_russian">Введите вашу почту</string>
+    <string name="enter_password_russian">Введите пароль</string>
+    <string name="enter_btn_russian">Войти</string>
+</resources>
